@@ -1,0 +1,79 @@
+.body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(230, 230, 230);
+}
+:root{
+    --margin-bottom:10px ;
+    --display:flex;
+
+}
+.remplir,.form-controle,.checkbox1,label,textarea,.dateword,select,input{
+    display: var(--display);
+}
+form{
+    background-color: white;
+    margin: var(margin-bottom);
+    border: solid 2px rgb(0, 0, 0);
+    width: 50%;
+    padding: 20px;
+}
+
+.remplir{
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    padding: 25px;
+}
+.form-controle{
+    flex-direction: row;
+    margin-bottom: 10px;
+    
+}
+.checkbox1{
+   width: 30%;
+   margin: var(margin-bottom);
+   justify-content: space-between;
+   padding-top: 15px;
+}
+label{
+    font-family:Arial, Helvetica, sans-serif ;
+    flex:1;
+    text-transform:inherit;
+}
+textarea{
+    flex: 3;
+}
+.dateword{
+    flex-direction: row;
+    flex: 1;
+}
+select{
+    flex: 3;
+    padding: 8px 5px;
+}
+input  {
+    box-sizing:border-box;
+    flex: 1 ;
+    padding: 8px 5px;
+    border-radius: 4px;
+}
+p{
+    font-size: 15px;
+}
+#date {
+    width: 50%;
+    margin-right: 15px;
+}
+#prenom{
+    margin-right: 15px;
+}
+#button1{
+    margin-top: var(margin-bottom);
+    padding: 8px 70px;
+    background-color: #009700;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 17px;
+}
